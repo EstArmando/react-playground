@@ -1,0 +1,32 @@
+.container {
+    border: 2px solid black;
+    width: 600px;
+    margin: 20px;
+    padding: auto;
+    text-align: center;
+    display: inline-block;
+    border-radius: 25px;
+}
+
+.container h1 {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 50px;
+    margin: 10px auto;
+    padding: auto;
+    color: aliceblue;
+    background-color: hsla(0, 0%, 0%, 0.623);
+}
+
+.container p {
+    font-size: 40px;
+    margin: 0;
+    padding: auto;
+}
+
+.container .description {
+    font-size: 25px;
+    text-align: justify;
+    padding: 10px;
+    margin: auto;
+}

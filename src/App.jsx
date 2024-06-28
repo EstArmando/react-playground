@@ -1,10 +1,10 @@
-import UserProfile from "./components/UserProfile"
+import Counter from "./components/Counter"
 
 const App = () => {
 
   return (
     <>
-
+      <Counter />
     </>
   )
 }

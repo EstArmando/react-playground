@@ -1,3 +1,4 @@
+import Counter from "./components/Counter"
 import UserProfile from "./components/UserProfile"
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
 
   return (
     <>
+      <Counter />
       {users.map((user, index) => (
         <UserProfile key={index} user={user} />
       ))}

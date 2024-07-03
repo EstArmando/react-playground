@@ -3,13 +3,13 @@ import Message from "./Message";
 import { useState } from "react";
 
 const WelcomeForm = () => {
-  const [user, setUser] = useState({ userName: "", age: "" });
+  const [user, setUser] = useState({ userName: "", age: null });
 
   const handleSubmit = (e) => {
     const { userName, age } = e.target;
     setUser({
       userName: userName.value,
-      age: age.value,
+      age: parseInt(age.value),
     });
     e.preventDefault();
   };

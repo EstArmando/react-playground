@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Counter.css";
+import styles from "./Counter.module.css";
 
 const Counter = () => {
   const [counter, setCounter] = useState(0);
@@ -15,7 +15,7 @@ const Counter = () => {
   }
 
   return (
-    <div className="container">
+    <div className={styles.container}>
       <h1>Counter</h1>
       <h2>{counter}</h2>
 

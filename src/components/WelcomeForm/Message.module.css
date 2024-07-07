@@ -1,0 +1,15 @@
+.error {
+  background-color: hsl(0, 100%, 50%);
+  border-radius: 5px;
+}
+
+.valid {
+  border-radius: 5px;
+  background-color: rgba(0, 105, 0, 0.658);
+}
+
+.warning {
+  background-color: rgba(255, 251, 0, 0.87);
+  border-radius: 5px;
+  color: black;
+}

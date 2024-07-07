@@ -1,5 +1,6 @@
 import Counter from "./components/Counter";
 import UserProfile from "./components/UserProfile";
+import WelcomeForm from "./components/WelcomeForm";
 
 const users = [
   {
@@ -29,6 +30,7 @@ const App = () => {
       {users.map((user, index) => (
         <UserProfile key={index} user={user} />
       ))}
+      <WelcomeForm />
     </>
   );
 };

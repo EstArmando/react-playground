@@ -1,3 +1,4 @@
+import { Link, BrowserRouter, Route, Routes } from "react-router-dom";
 import Counter from "./components/Counter";
 import UserProfile from "./components/UserProfile";
 
@@ -24,12 +25,25 @@ const users = [
 
 const App = () => {
   return (
-    <>
-      <Counter />
-      {users.map((user, index) => (
-        <UserProfile key={index} user={user} />
-      ))}
-    </>
+    <BrowserRouter>
+      <nav>
+        <Link to="/counter">Counter</Link>
+        <Link to="/profiles">Profiles</Link>
+      </nav>
+      <Routes>
+        <Route path="/counter" element={<Counter />} />
+        <Route
+          path="/profiles"
+          element={
+            <div>
+              {users.map((user, index) => (
+                <UserProfile key={index} user={user} />
+              ))}
+            </div>
+          }
+        />
+      </Routes>
+    </BrowserRouter>
   );
 };
 

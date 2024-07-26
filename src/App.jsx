@@ -2,6 +2,11 @@ import { Link, BrowserRouter, Route, Routes } from "react-router-dom";
 import Counter from "./components/Counter";
 import UserProfile from "./components/UserProfile";
 
+const link = {
+  margin: '10px',
+  padding: '2px',
+}
+
 const users = [
   {
     name: "José Maria",
@@ -27,8 +32,8 @@ const App = () => {
   return (
     <BrowserRouter>
       <nav>
-        <Link to="/counter">Counter</Link>
-        <Link to="/profiles">Profiles</Link>
+        <Link to="/counter" style={link}>Counter</Link>|
+        <Link to="/profiles" style={link}>Profiles</Link>
       </nav>
       <Routes>
         <Route path="/counter" element={<Counter />} />
